@@ -72,16 +72,21 @@ can(e){
   document.getElementById("M1").style.display = "grid";
   document.getElementById("M2").style.display = "none";
   document.getElementById("M3").style.display = "none";
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
   }else if(e.target.name==="savep"){
     alert("Password Updated");
     document.getElementById("M1").style.display = "grid";
   document.getElementById("M2").style.display = "none";
   document.getElementById("M3").style.display = "none";
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
   }else{ 
     document.getElementById("M1").style.display = "grid";
     document.getElementById("M2").style.display = "none";
     document.getElementById("M3").style.display = "none";
-    
+    document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
     }
 }
 
@@ -202,7 +207,7 @@ render(){
           <div className="cont">
           <div className="picup">
             <div className="sm">
-          <img src={this.props.go.img} alt='the profile picture' className="img-mi"/><center>
+          <center><img src={this.props.go.img} alt='the profile picture' className="img-mi"/>
           <input type="file" id="myFile" name="filename" className="upbt" accept=".jpg, .jpeg, .png"/></center></div>
           </div>
           <div className="infoup">

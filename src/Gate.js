@@ -17,7 +17,7 @@ class Gate extends Component{
         img:"Error",
         desc:"Error",
         fdata:{"Content":"NO DATA","Date":"NO DATA","Desc":"NO DATA","Pass_number":"NO DATA","User_name":"NO DATA","read":false},
-        his:[],
+        his:this.props.go.history,
         ctime:"Error"
       }
   this.fun=this.fun.bind(this);
@@ -190,7 +190,7 @@ render(){
             <div className="info-part">
               <div  className="student-image">
              
-                <img src="profile.jpg" alt='the profile picture' className='pic'/>
+                <img src={this.state.img} alt='the profile picture' className='pic'/>
               </div>
               <div className="details">
                 <div>
@@ -242,7 +242,7 @@ render(){
             <div className="info-part">
               <div  className="student-image">
              
-                <img src="profile.jpg" alt='the profile picture' className='pic'/>
+                <img src={this.state.img} alt='the profile picture' className='pic'/>
               </div>
               <div className="details">
                 <div>
@@ -279,11 +279,10 @@ render(){
       </div>
       <div className="main-grid">
         <div className="grid0">
-          <div >
           <button type="button" id='N2' className ="sec n2" onClick={this.fun} name='qr'>QR-Scanner</button>
           <button type="button" id='N1' className ="sec n1 dim" onClick={this.fun} name='not'>Notification</button>
           <button type="button" id='N3' className ="sec n3 dim" onClick={this.fun} name='his'>History</button></div>
-        </div>
+         
         <div className="grid1">
           
         <div id='P1' className="p1" >

@@ -13,7 +13,7 @@
     height: 6vh;
     background-color: white;
     z-index: 2 !important;
-    z-index: 99999999;
+    z-index: 999;
     margin-left: -3vw;
     margin-top: 1vh;
   }
@@ -219,7 +219,7 @@
       border-collapse: collapse;
       width: 100%;
       margin-left: 0.5vw;
-      z-index: 999999999;
+      z-index: 999;
       position: relative;
     }
 
@@ -351,7 +351,7 @@
       border-collapse: collapse;
       width: 100%;
       margin-left: 0.5vw;
-      z-index: 999999999;
+      z-index: 9999;
       position: relative;
     }
 
@@ -489,7 +489,7 @@
       margin-left: 0px;
     }
     .col1 {
-      z-index: 99999999;
+      z-index: 9999;
       margin-left: 0;
       position: relative;
     }
@@ -506,6 +506,8 @@
       margin-bottom: 7vh;
     }
     .grid0 {
+      display: flex;
+      flex-direction: row;
       width: 100%;
     }
     .grid0 button {
@@ -583,9 +585,6 @@
       .profile {
         margin: 3px;
       }
-    }
-    .grid0 {
-      background-color: ivory;
     }
     /*table section*/
     .table1 {
@@ -731,7 +730,7 @@
       height: 350px; /* Could be more or less, depending on screen size */
     }
   }
-  @media only screen and (max-width: 325px) {
+  @media only screen and (max-width: 375px) {
     .modal-content {
       background-color: #ffffff;
       margin: 15% auto; /* 15% from the top and centered */
@@ -739,6 +738,13 @@
       border: 1px solid #888;
       width: 300px;
       height: 350px; /* Could be more or less, depending on screen size */
+    }
+    .main-grid {
+      grid-template-rows: 7vh auto auto;
+    }
+    .sec {
+      width: 33.3%;
+      padding: 0;
     }
   }
 }

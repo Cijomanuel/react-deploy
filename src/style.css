@@ -387,7 +387,7 @@ nav ul ul ul li {
   padding-right: 1.5rem;
 }
 .nn {
-  width: 1.5rem;
+  width: 1.5rem !important;
   margin: 0 1.5rem;
 }
 
