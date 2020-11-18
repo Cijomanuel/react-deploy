@@ -69,7 +69,7 @@ nw(){
 
         <div>
         <br/>
-        <div><h4>Do you wish to delete the message ??</h4></div>
+        <div><h4>Do you wish to delete the message ?</h4></div>
       </div>
   <div className="submit-part">
   <button type="submit" className="close-buttoni" onClick={this.bt1}>Close</button>

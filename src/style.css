@@ -14,6 +14,11 @@ head,
 body {
   z-index: 1 !important;
 }
+.modal,
+.modali,
+.modal_n {
+  z-index: 999999999 !important;
+}
 body {
   font-family: "Open Sans";
   margin: 0;
