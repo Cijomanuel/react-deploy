@@ -208,7 +208,9 @@ render(){
           <div className="picup">
             <div className="sm">
           <center><img src={this.props.go.img} alt='the profile picture' className="img-mi"/>
-          <input type="file" id="myFile" name="filename" className="upbt" accept=".jpg, .jpeg, .png"/></center></div>
+          <label for="myFile" className="upbto">Upload Photo</label>
+          <input type="file" id="myFile" name="filename" className="upbt" accept=".jpg, .jpeg, .png" />
+         </center></div>
           </div>
           <div className="infoup">
             <div><h6>Register Number *</h6>

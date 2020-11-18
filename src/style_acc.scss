@@ -349,7 +349,7 @@ head {
   }
   .sm {
     float: right;
-    max-width: 50%;
+    max-width: 40%;
     margin-right: 20%;
   }
   .fx {
@@ -366,22 +366,23 @@ head {
     height: 4vh;
   }
   .upbt::before {
-    content: "Update Photo";
-    outline: none;
-    white-space: nowrap;
     -webkit-user-select: none;
     cursor: pointer;
-    padding-left: 30%;
   }
   .upbt::-webkit-file-upload-button {
     visibility: hidden;
   }
   .upbt {
-    width: 100% !important;
+    visibility: hidden;
+  }
+  .upbto {
     border-radius: 12px;
+    padding: 0 20px;
+    font-size: 0.8rem;
   }
   .upbt,
-  .upti {
+  .upti,
+  .upbto {
     width: 80%;
     padding: 5px;
     font-weight: 600;
