@@ -1,3 +1,6 @@
+.col1 {
+  z-index: 1 !important;
+}
 .gte {
   /* Main Content */
   .mbox {
@@ -8,12 +11,13 @@
     overflow: hidden;
   }
   .col1 {
+    z-index: 1 !important;
+  }
+  .col1 {
     text-align: left !important;
     width: 100%;
     height: 6vh;
     background-color: white;
-    z-index: 2 !important;
-    z-index: 9 !important;
     margin-left: -3vw;
     margin-top: 1vh;
   }
@@ -39,7 +43,6 @@
     font-weight: 600;
   }
   .dim {
-    z-index: 9 !important;
     opacity: 0.8;
     font-weight: 520;
     border-bottom: 1px solid #b6b6b6;
@@ -493,7 +496,6 @@
       margin-left: 0px;
     }
     .col1 {
-      z-index: 9 !important;
       margin-left: 0;
       position: relative;
     }
