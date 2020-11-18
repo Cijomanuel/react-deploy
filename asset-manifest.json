@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-deploy/static/css/main.e731ea40.chunk.css",
+    "main.css": "/react-deploy/static/css/main.9098d765.chunk.css",
     "main.js": "/react-deploy/static/js/main.b48a08f0.chunk.js",
     "main.js.map": "/react-deploy/static/js/main.b48a08f0.chunk.js.map",
     "runtime-main.js": "/react-deploy/static/js/runtime-main.d18e3b77.js",
@@ -8,7 +8,7 @@
     "static/js/2.6e06d9f0.chunk.js": "/react-deploy/static/js/2.6e06d9f0.chunk.js",
     "static/js/2.6e06d9f0.chunk.js.map": "/react-deploy/static/js/2.6e06d9f0.chunk.js.map",
     "index.html": "/react-deploy/index.html",
-    "static/css/main.e731ea40.chunk.css.map": "/react-deploy/static/css/main.e731ea40.chunk.css.map",
+    "static/css/main.9098d765.chunk.css.map": "/react-deploy/static/css/main.9098d765.chunk.css.map",
     "static/js/2.6e06d9f0.chunk.js.LICENSE.txt": "/react-deploy/static/js/2.6e06d9f0.chunk.js.LICENSE.txt",
     "static/media/style.css": "/react-deploy/static/media/preloader.1e1b1420.gif",
     "static/media/style_acc.scss": "/react-deploy/static/media/profile.c9983aa8.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.d18e3b77.js",
     "static/js/2.6e06d9f0.chunk.js",
-    "static/css/main.e731ea40.chunk.css",
+    "static/css/main.9098d765.chunk.css",
     "static/js/main.b48a08f0.chunk.js"
   ]
 }
