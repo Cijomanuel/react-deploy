@@ -10,8 +10,7 @@
   --transition-speed: 600ms;
 }
 
-head,
-.col1 {
+head {
   z-index: 1 !important;
 }
 body {
