@@ -1,9 +1,7 @@
 head {
   z-index: 1 !important;
 }
-.col1 {
-  z-index: 1 !important;
-}
+
 .acc {
   /* Main Content */
   .mbox {
@@ -12,6 +10,9 @@ head {
     color: black;
     z-index: 99999999999999;
     overflow: hidden;
+  }
+  .col1 {
+    z-index: 1 !important;
   }
   .col1 {
     text-align: left !important;

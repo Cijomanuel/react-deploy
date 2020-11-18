@@ -98,7 +98,7 @@ render(){
     return(
       <div className='acc'>
         <div className="mbox">                       
-    <div  className=" col1" style={{"zIndex":"1!important"}}>
+    <div  className=" col1" >
       <h1>Account</h1> 
     </div>
     <div className="maingrid" id="M1">
