@@ -10,6 +10,9 @@
   --transition-speed: 600ms;
 }
 
+head {
+  z-index: 1 !important;
+}
 body {
   font-family: "Open Sans";
   margin: 0;
