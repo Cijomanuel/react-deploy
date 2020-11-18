@@ -288,7 +288,7 @@ render(){
         <div id='P1' className="p1" >
         <div className="he">
           <div className="head">
-            <div><h4>Gate pass-II confirmation</h4></div>
+            <div><h4>Gate pass confirmation</h4></div>
             
           </div>
         </div>
