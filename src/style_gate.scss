@@ -619,7 +619,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 9999999999999999999999999999999999 !important; /* Sit on top */
-    left: 0;
+    padding-left: 35%;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -657,7 +657,7 @@
     background-color: rgb(238, 238, 238);
     width: 90%;
     height: auto;
-    padding-left: 15px;
+    padding-left: 5px;
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -746,6 +746,10 @@
     }
   }
   @media only screen and (max-width: 375px) {
+    .modal,
+    .modali {
+      padding-left: 2%;
+    }
     .modal-content {
       background-color: #ffffff;
       margin: 15% auto; /* 15% from the top and centered */
