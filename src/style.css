@@ -33,7 +33,7 @@ a {
   position: relative;
   left: 0px;
   top: 0px;
-  z-index: 999;
+  z-index: 9 !important;
   width: 100%;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -63,7 +63,7 @@ li {
   top: 0px;
   height: 100%;
   width: 100%;
-  z-index: 999999;
+  z-index: 999999999999999;
   background-color: #ffffff;
   background-position: center center;
   background-repeat: no-repeat;
@@ -464,14 +464,14 @@ nav ul ul ul li {
     background: #232428;
     width: 100%;
     padding: 9px 0px;
-    z-index: 999;
+    z-index: 9 !important;
   }
   .header-lower {
     position: fixed;
     width: 100%;
     height: 8vh;
     background: #fff;
-    z-index: 9999;
+    z-index: 9 !important;
     display: flex;
     flex-direction: row;
   }
@@ -487,7 +487,7 @@ nav ul ul ul li {
     position: fixed;
     margin-top: -4vh;
     height: 4.3vh;
-    z-index: 9999;
+    z-index: 9 !important;
   }
   main {
     padding-top: 12vh;

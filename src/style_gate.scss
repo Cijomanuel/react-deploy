@@ -13,7 +13,7 @@
     height: 6vh;
     background-color: white;
     z-index: 2 !important;
-    z-index: 999;
+    z-index: 9 !important;
     margin-left: -3vw;
     margin-top: 1vh;
   }
@@ -39,6 +39,7 @@
     font-weight: 600;
   }
   .dim {
+    z-index: 9 !important;
     opacity: 0.8;
     font-weight: 520;
     border-bottom: 1px solid #b6b6b6;
@@ -219,7 +220,7 @@
       border-collapse: collapse;
       width: 100%;
       margin-left: 0.5vw;
-      z-index: 999;
+      z-index: 9;
       position: relative;
     }
 
@@ -354,7 +355,7 @@
       border-collapse: collapse;
       width: 100%;
       margin-left: 0.5vw;
-      z-index: 9999;
+      z-index: 9 !important;
       position: relative;
     }
 
@@ -492,7 +493,7 @@
       margin-left: 0px;
     }
     .col1 {
-      z-index: 9999;
+      z-index: 9 !important;
       margin-left: 0;
       position: relative;
     }
@@ -578,7 +579,7 @@
     #myModal,
     #myModali {
       .modal-content {
-        z-index: 9999999999999999999999999999999999;
+        z-index: 9999999999999999999999999999999999 !important;
         width: 90%;
         height: auto;
       }
@@ -611,7 +612,7 @@
   .modali {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 9999999999999999999999999999999999; /* Sit on top */
+    z-index: 9999999999999999999999999999999999 !important; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -637,7 +638,7 @@
   /* Modal Content/Box */
   .modal-content {
     background-color: #ffffff;
-    z-index: 9999999999999999999999999999999999;
+    z-index: 9999999999999999999999999999999999 !important;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
