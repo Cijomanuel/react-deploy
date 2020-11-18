@@ -578,6 +578,8 @@
     }
     #myModal,
     #myModali {
+      z-index: 9999999999999999999999999999999999 !important;
+      position: fixed !important;
       .modal-content {
         z-index: 9999999999999999999999999999999999 !important;
         width: 90%;
@@ -638,6 +640,7 @@
   /* Modal Content/Box */
   .modal-content {
     background-color: #ffffff;
+    position: fixed;
     z-index: 9999999999999999999999999999999999 !important;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 10px;
@@ -728,6 +731,7 @@
   /* Medium screens */
   @media only screen and (max-width: 1130px) {
     .modal-content {
+      position: absolute !important;
       z-index: 9999999999999999999999999999999999;
       background-color: #ffffff;
       margin: 40% auto; /* 15% from the top and centered */
