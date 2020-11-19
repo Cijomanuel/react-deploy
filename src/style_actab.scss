@@ -61,10 +61,10 @@
   .modal-contenti {
     position: fixed;
     background-color: #ffffff;
-    margin: 15% 25%; /* 15% from the top and centered */
+    margin: 15% 35%; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
-    width: 50%;
+    width: 30%;
     height: auto; /* Could be more or less, depending on screen size */
   }
   .modal-contenti {
@@ -77,7 +77,7 @@
   .profilei {
     /*background-color: rgb(211, 207, 207);*/
     background-color: rgb(238, 238, 238);
-    width: 90%;
+    width: auto;
     height: 78%;
     padding-left: 15px;
     padding-right: 15px;
@@ -139,19 +139,22 @@
 
   /* Medium screens */
   @media only screen and (max-width: 1130px) {
-    .modal-content {
-      background-color: #ffffff;
-      margin: 0; /* Could be more or less, depending on screen size */
-    }
-    .profile {
-      width: 80%;
-      height: 80%;
-    }
     #auth {
       height: 80vh !important;
     }
   }
   @media only screen and (max-width: 825px) {
+    .modal-content,
+    .modal-contenti {
+      margin: 25% 15%;
+      width: 70%; /* Could be more or less, depending on screen size */
+    }
+    .profile,
+    .profilei {
+      width: auto;
+    }
+  }
+  @media only screen and (max-width: 430px) {
     .modal-content,
     .modal-contenti {
       margin: 45% 5%;

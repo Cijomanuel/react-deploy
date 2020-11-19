@@ -647,10 +647,9 @@
     position: fixed;
     z-index: 9999999999999999999999999999999999 !important;
     margin: 15% 0; /* 15% from the top and centered */
-    margin-left: -6%;
     padding: 10px;
     border: 1px solid #888;
-    width: 45%;
+    width: auto;
     height: auto; /* Could be more or less, depending on screen size */
   }
   .profile {
@@ -754,12 +753,14 @@
       width: 100%;
       padding-left: 3%;
     }
-    .modal-content {
+    .modal-content,
+    .modal-contenti {
+      position: fixed;
       background-color: #ffffff;
-      margin: 45% auto; /* 15% from the top and centered */
+      margin: 15% 17.5%; /* 15% from the top and centered */
       padding: 5px;
       border: 1px solid #888;
-      width: auto;
+      width: 55% !important;
       height: auto; /* Could be more or less, depending on screen size */
     }
     .main-grid {
@@ -768,6 +769,18 @@
     .sec {
       width: 33.3%;
       padding: 0;
+    }
+  }
+  @media only screen and (max-width: 565px) {
+    .modal-content,
+    .modal-contenti {
+      position: fixed;
+      background-color: #ffffff;
+      margin: 25% 0; /* 15% from the top and centered */
+      padding: 5px;
+      border: 1px solid #888;
+      width: 91% !important;
+      height: auto; /* Could be more or less, depending on screen size */
     }
   }
 }
