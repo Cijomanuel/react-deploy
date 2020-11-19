@@ -84,8 +84,9 @@ head {
     z-index: 999;
   }
   .img-mi {
+    width: 50%;
     float: right;
-    margin-right: 8%;
+    margin: 0 25%;
     z-index: 99999999;
   }
   .hh {
@@ -344,13 +345,15 @@ head {
   }
   .picup {
     float: right;
-    width: 35%;
+    margin: 0 !important;
+    width: auto;
     height: auto;
   }
   .sm {
+    display: flex;
+    flex-direction: column;
     float: right;
-    max-width: 40%;
-    margin-right: 20%;
+    width: 100%;
   }
   .fx {
     width: 20vw;
@@ -428,6 +431,45 @@ head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  @media only screen and (max-width: 940px) {
+    .picup {
+      width: 100% !important;
+      float: left;
+    }
+    .img-mi {
+      margin: 0 38.5%;
+      width: 150px;
+      height: 150px;
+    }
+    .main-grid {
+      height: auto;
+    }
+    .main-grid,
+    .main-grid1 {
+      display: none;
+      left: 30px !important;
+      grid-template-columns: 64vw;
+      grid-template-rows: auto auto;
+      grid-row-gap: 1vh;
+      margin-top: 14vh;
+      padding-left: 0;
+      margin-left: 1%;
+      margin-bottom: 2vh;
+      font-family: "Oswald", sans-serif;
+    }
+    .infoup {
+      width: 90%;
+      margin-left: 5%;
+    }
+    .br2 {
+      width: 35%;
+    }
+    .fx {
+      margin-top: 0;
+      width: 100%;
+      float: left;
+    }
   }
   @media only screen and (min-width: 825px) {
     .col1 {
@@ -522,13 +564,12 @@ head {
     }
     .sm {
       float: left;
-      max-width: 100%;
-      align-content: center !important;
-      width: 50% !important;
-      margin: 0 25%;
+      width: 100%;
     }
     .img-mi {
-      margin: 0;
+      margin: 0 25%;
+      min-width: 50%;
+      height: auto;
     }
     .upbt::before {
       padding-left: 0 10%;

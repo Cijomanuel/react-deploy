@@ -79,7 +79,8 @@ class Gate extends Component{
           time:this.state.his[j-1].Time_duration,
           type:this.state.his[j-1].Pass_type,
           img:this.state.his[j-1].user_image,
-          desc:this.state.his[j-1].Desc
+          desc:this.state.his[j-1].Desc,
+          ctime:this.state.his[j-1].Passed_time
         })
       if( document.getElementById("myModali").style.display = "none"){
         document.getElementById("myModali").style.display = "block";
@@ -194,19 +195,17 @@ render(){
               </div>
               <div className="details">
                 <div>
-                Type:<br/>
-                Name: <br/>
-                Date: <br/>
-                Time Duration: <br/>
-                Description:<br/>
-              </div>
-              <div className="details-answer">
-               {this.state.type}<br/>
-               {this.state.name}<br/>
-               {this.state.date}<br/>
-                {this.state.time}<br/>
-                {this.state.desc}<br/>
-              </div>
+                Type:</div>
+                <div className="details-answer">{this.state.type}</div>
+               <div>Name: </div> 
+               <div className="details-answer">{this.state.name}</div>
+               <div>Date: </div> 
+               <div className="details-answer">{this.state.date}</div> 
+               <div>Time Duration: </div>
+               <div className="details-answer">{this.state.time}</div>
+                <div>Description:</div>
+                <div className="details-answer">{this.state.desc}</div>
+              
           
               </div>
           
@@ -217,7 +216,7 @@ render(){
             <center>
               <input type="number" placeholder="Enter authentication code"/>
             <button type="submit" className="confirm-button" onClick={this.confirm.bind(this)}>Confirm</button>
-            <button type="submit" className="decline-button">Decline</button>
+            <button type="submit" className="decline-button" onClick={this.bt}>Decline</button>
           </center>
           </div>
           </div> 
@@ -246,20 +245,18 @@ render(){
               </div>
               <div className="details">
                 <div>
-                Type:<br/>
-                Name: <br/>
-                Date: <br/>
-                Passed Time: <br/>
-                Description:<br/>
+                Type:
               </div>
-              <div className="details-answer">
-               {this.state.type}<br/>
-               {this.state.name}<br/>
-               {this.state.date}<br/>
-                {this.state.ctime}<br/>
-                {this.state.desc}<br/>
-              </div>
-          
+               <div className="details-answer">{this.state.type}</div>
+               <div> Name: </div>
+               <div className="details-answer">{this.state.name}</div>
+                <div>Date:</div>
+                <div className="details-answer">{this.state.date}</div>
+                <div>Passed Time: </div>
+                <div className="details-answer">{this.state.ctime}</div>
+                <div>Description:</div>
+                <div className="details-answer">{this.state.desc}</div>
+              
               </div>
           
           </div>
@@ -329,7 +326,7 @@ render(){
                     {this.state.data.map(dt=>{
                       i=i+1;
                         return(
-                <tr style={dt.read?null:sty}>
+                <tr style={dt.read?null:sty} key={i}>
                   <td>{i}</td>
                  <td>{dt.Pass_number}</td>
             <td>{dt.User_name}</td>
